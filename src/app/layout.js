@@ -1,9 +1,20 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { Rajdhani } from "next/font/google";
 import "./globals.css";
+import { AuthProvider } from "@/context/AuthProvider";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import StoreFooter from "./footer/page";
+import NavbarPage from "./navbar/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const rajdhani = Rajdhani({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const geistMono = Geist_Mono({
@@ -19,10 +30,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      <body className={`bg-white min-h-screen ${rajdhani.className} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <AuthProvider>
+        <NavbarPage />
+          {children}
+        <ToastContainer />
+        <StoreFooter/>
+          </AuthProvider>
       </body>
     </html>
   );
