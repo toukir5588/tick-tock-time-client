@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tick Tock Time — Client
 
-## Getting Started
+A real-time collaborative time-tracking client application built using modern web technologies. This project communicates with the Tick Tock Time server to provide seamless synchronisation of tasks, timers, and user activity.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+* ⌛ **Real-time Timer Sync:** Start, pause, and reset timers with instant updates.
+* 👥 **Multi-user Collaboration:** Track team activity in real time.
+* 🎨 **Modern UI/UX:** Clean and responsive user interface.
+* 🔄 **API Integration:** Fully synced with the Tick Tock Time backend.
+* 🛠️ **Modular Architecture:** Easy to extend and maintain.
+
+---
+
+## 📁 Project Structure
+
+```
+/ src
+  ├── components/   # Reusable UI components
+  ├── pages/         # Application screens/pages
+  ├── hooks/         # Custom React hooks
+  ├── utils/         # Helper functions
+  ├── services/      # API and socket services
+  └── App.js         # Main app component
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🧰 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **React.js** — Frontend UI
+* **Tailwind CSS / CSS Modules** — Styling
+* **Socket.io Client** — Real-time communication
+* **Axios / Fetch API** — Backend communication
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚙️ Installation & Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1️⃣ Clone the repository
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+git clone https://github.com/toukir5588/tick-tock-time-client.git
+cd tick-tock-time-client
+```
 
-## Deploy on Vercel
+### 2️⃣ Install dependencies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+npm install
+# or
+yarn install
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3️⃣ Start development server
+
+```
+npm start
+# or
+yarn start
+```
+
+The app will run at:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🔗 Backend Dependency
+
+This client requires the Tick Tock Time backend server to be running.
+Make sure to set up environment variables:
+
+```
+REACT_APP_API_URL=your-backend-url
+REACT_APP_SOCKET_URL=your-socket-server-url
+```
+
+Create a `.env` file in the project root and add the above values.
+
+---
+
+## 🛠️ Build for Production
+
+```
+npm run build
+```
+
+The production-ready files will be generated in the `build/` directory.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit issues or pull requests.
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+### ✨ Author
+
+Created by **Toukir**
+
+If you like this project, star the repo! ⭐
