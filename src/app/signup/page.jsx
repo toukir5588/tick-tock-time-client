@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { use, useContext, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -43,7 +43,7 @@ const Register = () => {
         };
 
         // create user in the database
-        fetch("http://localhost:5000/users", {
+        fetch("https://tick-tock-time-server.vercel.app/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -74,7 +74,7 @@ const Register = () => {
 
   return (
     <div className="w-11/12 mx-auto my-10 flex justify-center items-center text-primary">
-     <title>Register</title>
+      <title>Register</title>
       <AnimationY>
         <div className="card gb-gradient w-full max-w-sm shrink-0  shadow-2xl">
           <div className="card-body">

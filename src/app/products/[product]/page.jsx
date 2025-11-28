@@ -8,6 +8,7 @@ import { useAuth } from '@/context/AuthProvider';
 
 const API_BASE_URL = 'http://localhost:5000';
 
+
 export default function ProductDetailsPage() {
     const params = useParams(); 
     const { user } = useAuth();

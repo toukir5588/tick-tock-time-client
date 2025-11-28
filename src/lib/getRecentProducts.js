@@ -1,5 +1,7 @@
 export default async function getRecentProducts() {
- const result = await fetch('http://localhost:5000/latest-products');
+  const result = await fetch(
+    "https://tick-tock-time-server.vercel.app/latest-products"
+  );
 
- return result.json();
+  return result.json();
 }
