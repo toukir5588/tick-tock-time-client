@@ -1,12 +1,12 @@
-# Tick Tock Time — Client
+# Tick Tock Time (E-commerce Website)
 
-A real-time collaborative time-tracking client application built using modern web technologies. This project communicates with the Tick Tock Time server to provide seamless synchronisation of tasks, timers, and user activity.
+An e-commerce web application where users can explore and purchase a wide variety of premium watch collections. It offers a seamless shopping experience with modern UI, product details, and smooth navigation.
 
 ---
 
 ## 🚀 Features
 
-* ⌛ **Real-time Timer Sync:** Start, pause, and reset timers with instant updates.
+* ⌛ **Large collection of premium watches with category-based browsing
 * 👥 **Multi-user Collaboration:** Track team activity in real time.
 * 🎨 **Modern UI/UX:** Clean and responsive user interface.
 * 🔄 **API Integration:** Fully synced with the Tick Tock Time backend.
